@@ -1,0 +1,41 @@
+{
+  "name": "genpark-corporate-identity-stationery-business-card-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Corporate identity stationery and business card synthesizer generating NFC vCards and vector print assets.",
+  "author": "genpark",
+  "category": "brand-identity",
+  "tags": [
+    "business-card-generator",
+    "letterhead-maker",
+    "stationery-suite",
+    "nfc-vcard",
+    "corporate-branding"
+  ],
+  "inputs": {
+    "organization_name": {
+      "type": "string"
+    },
+    "individual_name": {
+      "type": "string"
+    },
+    "role_title": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "stationery_suite_id": {
+      "type": "string"
+    },
+    "business_card_nfc_vcard_encoded": {
+      "type": "boolean"
+    },
+    "vector_business_card_pdf_url": {
+      "type": "string"
+    },
+    "corporate_letterhead_docx_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
